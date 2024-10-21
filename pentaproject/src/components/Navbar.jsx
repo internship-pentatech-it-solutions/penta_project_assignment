@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#f40000] text-white pt-4">
+      <nav className="bg-[#f40000] text-white pt-4 fixed w-full z-50 ">
         <div className="justify-between flex px-12 pt-6 ">
           {openMenu ? (
             <IoClose
