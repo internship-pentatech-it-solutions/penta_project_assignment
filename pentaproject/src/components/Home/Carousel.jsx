@@ -3,14 +3,10 @@ import "flowbite";
 const Carousel = () => {
   return (
     <>
-      <div className="px-2 py-0 bg-slate-300">
-        <marquee behavior="scroll" direction="right" className="text-3xl font-sans font-semibold pt-6 pb-4 shadow-lime-400">
-        Find Your Perfect Night's Sleep</marquee>
-        <span className="text-xl shadow-sm font-sans font-medium m-6">Where comfort meets tranquility</span>
         <div
           id="default-carousel"
-          class="relative w-full"
           data-carousel="slide"
+          class="relative w-full px-6 pt-32"
         >
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
@@ -126,7 +122,7 @@ const Carousel = () => {
             </span>
           </button>
         </div>
-      </div>
+      
     </>
   );
 };

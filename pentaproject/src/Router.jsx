@@ -1,9 +1,9 @@
 // src/Router.js
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Shop from "./components/Shop";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Shop from "./components/Pages/Shop";
+import About from "./components/Pages/About";
+import Contact from "./components/Pages/Contact";
 
 function AppRouter() {
   return (

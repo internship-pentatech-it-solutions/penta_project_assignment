@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#f40000] text-white pt-4 fixed w-full z-50 ">
+      <nav className="bg-[#0c0e52] text-white pt-4 ">
         <div className="justify-between flex px-12 pt-6 ">
           {openMenu ? (
             <IoClose
@@ -36,7 +36,7 @@ const Navbar = () => {
               type="search"
               name=""
               placeholder="search"
-              className="rounded-lg hidden lg:block py-3 px-2 text-3xl  pl-10 pr-10 focus:border-4 border-blue-600"
+              className="rounded-lg hidden lg:block py-3 px-2 text-3xl  pl-10 pr-10 focus:border-4 border-blue-600 justify-center"
             />
             <IoSearch className="absolute right-4 top-8 transform -translate-y-1/2 text-black text-3 xl" />
           </div>
