@@ -7,6 +7,9 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const handleClick = () => {
+    setOpenMenu(false);
+  };
 
   return (
     <>
@@ -48,6 +51,7 @@ const Navbar = () => {
         <div className="hidden lg:flex font-sans font-bold text-2xl  justify-center space-x-12">
           <Link
             to="/"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             Home
@@ -55,6 +59,7 @@ const Navbar = () => {
 
           <Link
             to="/about"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             About
@@ -62,13 +67,23 @@ const Navbar = () => {
 
           <Link
             to="/contact"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             Contact
           </Link>
 
           <Link
+            to="/service"
+            onClick={handleClick}
+            className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
+          >
+            Services
+          </Link>
+
+          <Link
             to="/shop"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             Shop
@@ -77,15 +92,17 @@ const Navbar = () => {
       </nav>
 
       {openMenu && (
-        <div className="w-full px-6 pb-4 bg-[#2b1e1e] flex flex-col text-white font-sans font-semibold text-xl gap-y-2">
+        <div className="w-full px-6 pb-4 bg-[#2b1e1e] flex flex-col lg:hidden text-white font-sans font-semibold text-xl gap-y-2">
           <Link
             to="/"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             Home
           </Link>
           <Link
-            to="/"
+            to="/service"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             Services
@@ -93,6 +110,7 @@ const Navbar = () => {
 
           <Link
             to="/about"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             About
@@ -100,6 +118,7 @@ const Navbar = () => {
 
           <Link
             to="/contact"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             Contact
@@ -107,6 +126,7 @@ const Navbar = () => {
 
           <Link
             to="/shop"
+            onClick={handleClick}
             className=" hover:border-b-2 border-yellow-500 rounded-md hover:text-yellow-400 focus:text-yellow-600 focus:border-b-2"
           >
             Shop

@@ -6,7 +6,7 @@ const Carousel = () => {
         <div
           id="default-carousel"
           data-carousel="slide"
-          class="relative w-full px-6 pt-32"
+          class="relative w-full px-6 pt-8"
         >
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
