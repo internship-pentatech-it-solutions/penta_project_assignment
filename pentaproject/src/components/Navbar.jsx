@@ -29,7 +29,7 @@ const Navbar = () => {
 
           <div>
             <img
-              src="\src\assets\images\wsports.jpg"
+              src="\assets\images\wsports.jpg"
               alt="Logo"
               className="w-44 h-20"
             />

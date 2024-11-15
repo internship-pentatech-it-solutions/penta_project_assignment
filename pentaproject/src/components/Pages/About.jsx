@@ -4,8 +4,8 @@ const About = () => {
       <div className="container mx-auto p-4">
         <div className="flex flex-col lg:flex-row items-center">
           <img
-            src="\src\assets\image (4).avif"
-            alt=""
+            src="\assets\image (4).avif"
+            alt=" A personnel worker"
             className="w-full  lg:w-1/3 object-cover"
           />
           <div className="text-md pt-8 max-w-6xl md:pl-4">

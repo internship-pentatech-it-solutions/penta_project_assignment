@@ -10,7 +10,8 @@ const Contact = () => {
     Contact Us
   </div>
   <img
-    src="\src\assets\image (5).avif"
+    src="\assets\image (5).avif " 
+    alt=" A personnel at office"
     className="w-full h-full object-cover rounded-t-md"
   />
 </div>

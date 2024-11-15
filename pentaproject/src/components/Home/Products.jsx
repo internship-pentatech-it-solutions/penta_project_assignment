@@ -1,14 +1,15 @@
+
 import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import axiosInstance from '/src/Axios/axiosInstance.js'
-const Product = ({ product }) => {
+const Product = ({product}) => {
 
   const imgUrl = `${import.meta.env.VITE_APP_API_URL}/${product.pictures[0].image_path}`;
   // console.log(product);
   // console.log(imgUrl);
 
   return (
-    <div className="shadow px-2 py-1 w-full mt-9 border border-s-4 h-70 shadow overflow-hidden">
+    <div className="shadow px-2 py-1 w-full mt-9 border border-s-4 h-70 overflow-hidden">
     <div className="h-[70%] w-full">
         <img 
             src={imgUrl} 
